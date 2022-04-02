@@ -6,7 +6,8 @@ Portafolio de proyectos realizados durante el curso de LaunchX :rocket:, especia
 
 ## HTML
 Proyecto de maquetación de una página web para una pastelería usando HTML y un poco de CSS.
-\n
+
+
 
 
 ## POKÉDEX
