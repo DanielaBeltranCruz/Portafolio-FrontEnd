@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet" >
+</head>
+<body>
+    <div main class="main">
+        <h1>POKEDEX</h1>
+        <img src="./images/pokeball.png" alt="Pokemon" id="pokeImg" width="80px">
+        <form action="" onsubmit="searchPokemon(event)">
+            <input type="text" placeholder="Pokemon name or ID" id="pokemon" name="pokemon" autocomplete="off"><br>
+        </form>
+    </div>
+
+    <section class="fondoImagen">
+        <div data-poke-card class="poke-card">
+            <div class="poke-name"> 
+                <div data-poke-name class="poke-name">Pokemon</div>
+            </div> 
+            <div class="poke-id">
+                <div data-poke-id class="poke-id">ID</div>
+            </div>
+            <div data-poke-img-container class="img-container">
+                <img data-poke-img class="poke-img" src="./images/poke-shadow.png"/>
+            </div>
+            <div data-poke-types class="poke-types"></div>
+            <div data-poke-stats class="poke-stats"></div>
+            <div data-poke-abilities class="poke-abilities"></div> 
+            <div class="poke-name-error"> 
+                <div data-poke-name-error class="poke-name-error"></div>
+            </div> 
+        </div>
+    </section>
+
+</body>
+<footer>
+    <script src="./api_pokedex.js"></script>
+</footer>
+
+</html>
