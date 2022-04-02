@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #fcf0f5;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 27%;
+            height: 750px;
+            /* only for demonstration, should be removed */
+            background: rgba(212, 83, 132, 0.548);
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 73%;
+            background-color: #e7d8d3;
+            height: 750px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(228, 85, 156);
+            padding: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./logo_pasteleria.png" alt="Logo_Pastelería" width="360px" height="320px"><br>
+        <h1>Inventario</h1>
+    </header>  
+    <section>
+        <nav>
+            <ul>
+                <li><a href="./Intro.html">Inicio</a></li><br>
+                <li><a href="./Administracion.html">Administración</a></li><br>
+                <li><a href="./Inventario.html">Inventario</a></li><br>
+                <li><a href="./Lista_pedidos.html">Lista de pedidos</a></li><br>
+
+            </ul>
+        </nav>
+        <article>
+            <h2>Cantidad de sabores disponibles</h2>
+            <table>
+                <tr>
+                    <th>Sabor</th>
+                    <th>Cantidad</th>
+                </tr>
+                <tr>
+                    <td>Tres leches</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Fresa</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Chocolate</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Nuez</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Durazno</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Vainilla</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Coco</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Piña</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Zanahoria</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Moka</td>
+                    <td>8</td>
+                </tr>
+            </table>
+            <br>
+            <hr>
+            <h2>Cantidad de adornos disponibles</h2>
+            <table>
+                <tr>
+                    <th>Adornos</th>
+                    <th>Cantidad</th>
+                </tr>
+                <tr>
+                    <td>Frutas</td>
+                    <td>2 kg</td>
+                </tr>
+                <tr>
+                    <td>Adornos de chocholate</td>
+                    <td>1 kg</td>
+                </tr>
+                <tr>
+                    <td>Fondant</td>
+                    <td>1 kg</td>
+                </tr>
+                <tr>
+                    <td>Velas explosivas</td>
+                    <td>30 piezas</td>
+                </tr>
+                <tr>
+                    <td>Velas de cera</td>
+                    <td>20 piezas</td>
+                </tr>
+                <tr>
+                    <td>Letreros</td>
+                    <td>15 piezas</td>
+                </tr>
+            </table>
+            <br>
+        </article>
+    </section>
+    <footer>
+        <h2>Contáctanos</h2>
+        <p>Avenida México esquina Javier Mina 6, Tepic Centro, C.P. 63000 </p>
+        <p>311 145 2020</p>
+        <p>Horario de atención</p>
+        <p>De lunes a domingo de 10 a.m a 6 p.m</p>
+    </footer>
+
+</body>
+</html>

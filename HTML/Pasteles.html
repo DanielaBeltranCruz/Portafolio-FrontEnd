@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteles</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #fcf0f5;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 27%;
+            height: 900px;
+            /* only for demonstration, should be removed */
+            background: rgba(212, 83, 132, 0.548);
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 73%;
+            background-color: #e7d8d3;
+            height: 900px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(228, 85, 156);
+            padding: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./logo_pasteleria.png" alt="Logo_Pastelería" width="360px" height="320px"><br>
+        <h1>Pasteles</h1>
+        <p>Los pasteles decorados están de moda</p>
+        <p>Puedes elegirlos de tamaño personal, mediano y grande</p>
+    </header>        
+    <section>
+        <nav>
+            <a href="./Intro.html">Inicio</a>
+            <a href="./Pasteles.html">Pasteles</a>
+            <a href="./Pedido.html">Pedido</a>
+            <a href="./Administracion.html">Pastelero</a>
+            <h2>Tamaños</h2>
+            <ul>
+                <li>Personal ............................. $42.00</li><br>
+                <li>Mediano ............................. $195.00</li><br>
+                <li>Grande ............................... $330.00</li><br>
+            </ul>
+            <h2>Extras</h2>
+            <dl>
+                <dt>Vela explosiva (colores: plateado, dorado, rosa, negro)</dt><br>
+                <dd>- Chica  ...................................... $25.00 </dd><br>
+                <dd>- Grande ................................... $40.00 </dd><br><br>
+                <dt>Vela de cera</dt><br>
+                <dd>- Color: Rosa, Azul, Multicolor ... $25.00</dd><br>
+                <dt>Letreros</dt><br>
+                <dd>- Letreros de madera diferentes frases, tamaños y colores ........................ $60.00 </dd><br><br>   
+            </dl> 
+        </nav>
+        <article>
+            <h2>Sabores de pasteles</h2>
+            <ul>
+                <li>Tres leches</li><br>
+                <li>Fresa</li><br>
+                <li>Chocolate</li><br>
+                <li>Nuez</li><br>
+                <li>Durazno</li><br>
+                <li>Vainilla</li><br>
+                <li>Coco</li><br>
+                <li>Zanahoria</li><br>
+                <li>Moka</li><br>
+            </ul>
+            <hr>
+            <h2>Adornos para decorar el pastel</h2>
+            <dl>
+                <dt>Frutas</dt>
+                <dd>- Durazno, Fresa, Kiwi, Cereza, Piña .......................................................... $100.00 </dd><br>
+                <dt>Adornos de cobertura de chocolate</dt>
+                <dd>- Chocolate blanco, con leche y oscuro ....................................................... $100.00 </dd><br>
+                <dt>Fondant</dt>
+                <dd>- Figuras hechas de Fondant ...................................................................... $100.00 </dd><br>
+                <dt>Frutos secos</dt>
+                <dd>- Nuez picada .............................................................................................. $25.00 </dd>
+                <dd>- Almendras fileteadas ................................................................................ $40.00 </dd><br>
+            </dl>
+        </article>
+    </section>
+    <footer>
+        <h2>Contáctanos</h2>
+        <p>Avenida México esquina Javier Mina 6, Tepic Centro, C.P. 63000 </p>
+        <p>311 145 2020</p>
+        <p>Horario de atención</p>
+        <p>De lunes a domingo de 10 a.m a 6 p.m</p>
+    </footer>
+</body>
+</html>

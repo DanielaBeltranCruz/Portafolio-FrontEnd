@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #fcf0f5;
+            padding: 10px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 27%;
+            height: 1650px;
+            /* only for demonstration, should be removed */
+            background: rgba(212, 83, 132, 0.548);
+            padding: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 73%;
+            background-color: #e7d8d3;
+            height: 1650px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: rgb(228, 85, 156);
+            padding: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./logo_pasteleria.png" alt="Logo_Pastelería" width="360px" height="320px"><br>
+        <h1>Pedido</h1>
+        <p>Realiza tu pedido aquí</p>
+    </header>  
+    <section>
+        <nav>
+            <a href="./Intro.html">Inicio</a>
+            <a href="./Pasteles.html">Pasteles</a>
+            <a href="./Pedido.html">Pedido</a>
+            <a href="./Administracion.html">Pastelero</a>
+        </nav>
+        <article>
+            <h2>Formulario para pedido</h2>
+            <h3>Ingrese tus datos de contacto</h3>
+                <form action="/accion.js" id="form1" method="post">
+                <label for="Nombre">Nombre</label><br>
+                <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br><br>
+                <label for="Telefono">Teléfono</label><br>
+                <input type="Telefono" id="Telefono" name="Telefono" maxlength="10" placeholder="Teléfono"><br><br>
+                <label for="Correo">Correo Electrónico</label><br>
+                <input type="email" id="Correo" name="Correo" placeholder="Correo Electrónico"><br><br>
+                <label for="descripcion1">Descripción general del pastel</label><br>
+                <input type="text" id="descripcion1" name="descripcion1"><br><br>
+
+            <h3>Personaliza tu pastel</h3>
+                <h4>Selección de sabores</h4>
+                <input type="checkbox" id="topping1" name="topping1" value="Tres leches">
+                <label for="topping1">Tres leches</label><br>
+                <input type="checkbox" id="topping2" name="topping2" value="Fresa">
+                <label for="topping2">Fresa</label><br>
+                <input type="checkbox" id="topping3" name="topping3" value="Chocolate">
+                <label for="topping3">Chocolate</label><br>
+                <input type="checkbox" id="topping5" name="topping5" value="Nuez">
+                <label for="topping5">Nuez</label><br>
+                <input type="checkbox" id="topping6" name="topping6" value="Durazno">
+                <label for="topping6">Durazno</label><br>
+                <input type="checkbox" id="topping7" name="topping7" value="Vainilla">
+                <label for="topping7">Vainilla</label><br>
+                <input type="checkbox" id="topping8" name="topping8" value="Coco">
+                <label for="topping8">Coco</label><br>
+                <input type="checkbox" id="topping9" name="topping9" value="Piña">
+                <label for="topping9">Piña</label><br>
+                <input type="checkbox" id="topping10" name="topping10" value="Zanahoria">
+                <label for="topping10">Zanahoria</label><br>
+                <input type="checkbox" id="topping11" name="topping11" value="Moka">
+                <label for="topping11">Moka</label><br>
+            
+                <h4>Selección de adornos</h4>
+                <dl>
+                    <dt>Frutas</dt>
+                    <dd>
+                        <input type="checkbox" id="topping1" name="topping1" value="Durazno">
+                        <label for="topping1">Durazno</label><br>
+                        <input type="checkbox" id="topping2" name="topping2" value="Fresa">
+                        <label for="topping2">Fresa</label><br>
+                        <input type="checkbox" id="topping3" name="topping3" value="Kiwi">
+                        <label for="topping3">Kiwi</label><br>
+                        <input type="checkbox" id="topping4" name="topping4" value="Cereza">
+                        <label for="topping4">Cereza</label><br>
+                        <input type="checkbox" id="topping5" name="topping5" value="Piña">
+                        <label for="topping5">Piña</label><br>
+                    </dd><br>  
+                </dl>
+                <dl>
+                    <dt>Adornos de cobertura de chocolate</dt>
+                    <dd>      
+                        <input type="checkbox" id="topping6" name="topping6" value="Chocolate blanco">
+                        <label for="topping6">Chocolate blanco</label><br>
+                        <input type="checkbox" id="topping7" name="topping7" value="Chocolate con leche">
+                        <label for="topping7">Chocolate con leche</label><br>
+                        <input type="checkbox" id="topping8" name="topping8" value="Chocolate oscuro">
+                        <label for="topping8">Chocolate oscuro</label><br>
+                    </dd><br>  
+                </dl>
+                <dl>
+                    <dt>Fondant</dt>
+                    <dd>      
+                        <input type="checkbox" id="topping9" name="topping9" value="Figuras de Fondant">
+                        <label for="topping9">Figuras de Fondant</label><br>
+                    </dd><br>  
+                </dl>
+                <dl>
+                    <dt>Frutos secos</dt>
+                    <dd>      
+                        <input type="checkbox" id="topping10" name="topping10" value="Nuez picada">
+                        <label for="topping10">Nuez picada</label><br>
+                        <input type="checkbox" id="topping11" name="topping11" value="Almendras fileteadas">
+                        <label for="topping11">Almendras fileteadas</label><br>
+                    </dd><br>  
+                </dl>
+                <dl>
+                    <dt>Vela explosiva</dt>
+                    <dd>      
+                        <input type="checkbox" id="topping12" name="topping12" value="Chica">
+                        <label for="topping12">Chica</label><br>
+                        <input type="checkbox" id="topping13" name="topping13" value="Grande">
+                        <label for="topping13">Grande</label><br>        
+                    </dd><br>  
+                </dl>
+                <dl>
+                    <dt>Vela de cera</dt>
+                    <dd>      
+                        <input type="checkbox" id="topping14" name="topping14" value="Rosa">
+                        <label for="topping14">Rosa</label><br>
+                        <input type="checkbox" id="topping15" name="topping15" value="Azul">
+                        <label for="topping15">Azul</label><br>        
+                        <input type="checkbox" id="topping16" name="topping16" value="Multicolor">
+                        <label for="topping16">Multicolor</label><br>   
+                    </dd><br>  
+                </dl>
+                <dl>
+                    <dt>Letreros</dt>
+                    <dd>      
+                        <input type="checkbox" id="topping17" name="topping17" value="Letreros de madera diferentes frases, tamaños y colores">
+                        <label for="topping17">Letreros de madera diferentes frases, tamaños y colores</label><br>
+                </dl>
+                <br><br>
+                <input type="reset">
+                <input type="submit">
+                </form>
+        </article>
+    </section>
+    <footer>
+        <h2>Contáctanos</h2>
+        <p>Avenida México esquina Javier Mina 6, Tepic Centro, C.P. 63000 </p>
+        <p>311 145 2020</p>
+        <p>Horario de atención</p>
+        <p>De lunes a domingo de 10 a.m a 6 p.m</p>
+    </footer>
+</body>
+</html>
