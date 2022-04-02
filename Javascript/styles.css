@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.main{
+    height: auto;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 22px;
+    text-align: center;
+    align-content: center;
+    background-color: red;
+}
+
+form {
+    width: 150px;
+    margin: 40px auto;
+    
+}
+
+input {
+    position: relative;
+    bottom: 35px;
+    right: 8px;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+}
+
+section{
+    height: 750px;
+}
+
+.fondoImagen {
+    background-image: url("./images/Pokedex.png");
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: 65%;
+}
+
+.poke-card {
+    position: relative;
+    top: 190px;
+    height: fit-content;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.poke-name div{
+    position: relative;
+    right: 530px;
+    padding: 5px;
+    margin: 5px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+    float: right;
+}
+
+.poke-id div{
+    position: relative;
+    left: 70px;
+    padding: 5px;
+    margin: 5px;
+    width: 80px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+    float: left;
+}
+
+.img-container {
+    position: relative;
+    top: 50px;
+    right: 235px;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.poke-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.poke-types div {
+    position: relative;
+    top: 60px;
+    left: 125px;
+    padding: 4px;
+    margin: 5px;
+    width: 220px;
+    border-radius: 4px;
+    border: 1.6px dashed black;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.poke-stats div {
+    position: relative;
+    bottom: 100px;
+    left: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 3px;
+    width: 400px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.poke-abilities div {
+    position: relative;
+    bottom: 80px;
+    left: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 3px;
+    width: 400px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.poke-name-error div{
+    position: relative;
+    bottom: 160px;
+    left: 50px;
+    width: 400px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    float: left;
+}
